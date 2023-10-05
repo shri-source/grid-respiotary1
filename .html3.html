@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/three.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            padding-top: 80px;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #403222;
+            max-width: 100%;
+        }
+        .section a {
+            display: block;
+            padding-left: 10px;
+            text-decoration: none;
+            color:  #8c6e54;
+            margin: 25px 0px;
+        }
+        .item img {
+            width: 200px;
+            margin-left: 100px;
+        }
+        .section1 p {
+            text-align: end;
+            color:  #c0c5ca;
+           padding-left: 100px;
+           left: 300px;
+
+        }
+        div a {
+           display: block;
+           padding-left: 10px;
+           text-decoration: none;
+           color:  #8c6e54;
+           margin: 25px 0px;
+        }
+        .section h1 {
+            color: #c0c5ca;
+        }
+        div h1 {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item">
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="">
+    </div>
+    <div class="section">
+        <h1>Navigation links</h1>
+        <a href="http://127.0.0.1:5500/three.html#">About</a>
+        <a href="http://127.0.0.1:5500/three.html#">Contact</a>
+        <a href="http://127.0.0.1:5500/three.html#">Login us</a>
+        <a href="http://127.0.0.1:5500/three.html#">Home</a>
+    </div>
+    <div>
+        <h1>Learn more</h1>
+        <a href="http://127.0.0.1:5500/three.html#">Privacy</a>
+        <a href="http://127.0.0.1:5500/three.html#">Term</a>
+        <a href="http://127.0.0.1:5500/three.html#">Security</a>
+        <a href="http://127.0.0.1:5500/three.html#">sitemap</a>
+    </div>
+    <div class="section1">
+        <p>© Copyright All rights Reserved</p>
+    </div>
+   </div> 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

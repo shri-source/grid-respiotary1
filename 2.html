@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/two.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            display: grid;
+            max-width: 1200px;
+            grid-template-columns: repeat(3, 1fr);
+            margin: auto;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 20px;
+            color: #120f0f;
+        }
+        nav a:hover {
+            color: red;
+        }
+        nav>button {
+            padding: 5px 40px;
+            margin-left: 250px;
+            margin-right: 160px;
+           font-weight: bold;
+           background-color: #0ee67e;
+           border: 0;
+           border-radius: 5px;
+        }
+        nav>img {
+            width: 50px;
+            margin-left: 30px;
+        }
+        .container {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            margin-left: 150px;
+        }
+        div>img {
+            height: 400px;
+            width: 250px;
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+        aside {
+            background-color: yellow;
+            height: 400px;
+            width: 150px;
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+        .text {
+            margin-top: 80px;
+        }
+        .text>button {
+            padding: 5px 30px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .text>p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #79a4a4;
+        }
+        .sub-section {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 50px;
+            background-color: #32210a;
+            border-right-width: 20px;
+        }
+        .section-1>h2 {
+            color: aliceblue;
+        }
+        .section-2>h2 {
+            color: aliceblue;
+        }
+        .section-3>h2 {
+            color: aliceblue;
+        }
+        .section-1>p {
+            color: #735938;
+        }
+        .section-2>p {
+            color: #735938;
+        }
+        .section-3>p {
+            color: #735938;
+        }
+        .section-1>img {
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .section-2>img {
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .section-3>img {
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .hero-container {
+            border: 2px solid blacks;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            <img src="./2_files/healthy-food-logo-icon-vector-template_644408-657.webp" alt="">
+            <ul>
+                <a href="http://127.0.0.1:5500/two.html">Home</a>
+                <a href="http://127.0.0.1:5500/two.html">About</a>
+                <a href="http://127.0.0.1:5500/two.html">Contact</a>
+            </ul>
+            <button>Login</button>
+        </nav>
+            <div class="container">
+        <div class="text">
+            <h1>Healthy food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe ex, incidunt, assumenda vero est obcaecati in temporibus unde voluptas quisquam autem illum ipsum corporis totam enim consectetur mollitia rerum!</p>
+            <button>Read more</button>
+        </div>
+        <div>
+            <img src="./2_files/download.jpeg" alt="">
+        </div>
+        <aside>
+            .
+        </aside>
+    </div>
+    <section class="sub-section">
+    <div class="section-1">
+        <img src="./2_files/4x_-_No_min_order_x0bxuf" alt="">
+        <h2>No Minimum Order</h2>
+        <p>
+          Order in for yourself or for <br> the group, with no restrictions on order
+          value
+        </p>
+    </div>
+    <div class="section-2">
+        <img src="./2_files/4x_Live_order_zzotwy" alt="">
+        <h2>Live Order Tracking</h2>
+        <p>
+          Know where your order is at all <br> times, from the restaurant to your
+          doorstep
+        </p>
+    </div>
+    <div class="section-3">
+    <img src="./2_files/4x_-_Super_fast_delivery_awv7sn" alt="">
+    <h2>Lightning-Fast Delivery</h2>
+        <p>
+          Experience Swiggy's superfast <br> delivery for food delivered fresh &amp; on
+          time
+        </p>
+    </div>
+</section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
